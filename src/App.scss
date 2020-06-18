@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'rune';
+  src: url("./fonts/RuneAMN_Sans_1.20171016.otf");
+}
+.center {
+  text-align: center;;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.vs-button {
+  display: inline-block;
+}
+.rune {
+  font-family: rune;
+  &.size-L {
+    font-size: 30px;
+  }
+  &.size-XL {
+    font-size: 34px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: antiquewhite;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 100px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    display: table;
+    padding-top: 12px;
+  }
+  &.EE {
+    &:before {
+      content: '\016D6';
+    }
+  }
+  &.MM {
+    &:before {
+      content: '\016DC';
+    }
+  }
+  &.KK {
+    &:before {
+      content: '\016B2';
+    }
+  }
+  &.II {
+    &:before {
+      content: '\016C1';
+    }
+  }
+  &.HH {
+    &:before {
+      content: '\016BA';
+    }
+  }
+  &.SS {
+    &:before {
+      content: '\016A6';
+    }
+  }
+  &.JJ {
+    &:before {
+      content: '\016B7';
+    }
+  }
+}
+.map {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 10px auto;
+  position: relative;
+  background-image: url("./images/MagicCircle_RuneAMN_20141019.svg");
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: center center;
+}
